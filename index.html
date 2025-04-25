@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python: Циклы</title>
+    <link rel="shortcut icon" href="Без имени.png" />
+    <link rel="stylesheet" href="style123.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Python: Циклы for и while</h1>
+        
+        <div class="section">
+            <h2>Цикл for</h2>
+            <p>Для перебора элементов последовательности:</p>
+            <code>for элемент in последовательность:
+    # выполняемый код</code>
+            
+            <div class="example">
+                <h3>Пример со списком:</h3>
+                <code>fruits = ["яблоко", "банан"]
+for fruit in fruits:
+    print(fruit)</code>
+                <div class="output">
+                    Вывод:<br>яблоко<br>банан
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Цикл while</h2>
+            <p>Выполняется пока условие истинно:</p>
+            <code>while условие:
+    # код
+    # важно изменять условие!</code>
+            
+            <div class="example">
+                <code>count = 0
+while count < 3:
+    print(count)
+    count += 1</code>
+                <div class="output">
+                    Вывод:<br>0<br>1<br>2
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Функция range()</h2>
+            <p>Генерация числовых последовательностей:</p>
+            <code>range(5)       # 0,1,2,3,4
+range(2,5)    # 2,3,4
+range(0,10,2) # 0,2,4,6,8</code>
+            
+            <div class="example">
+                <code>for i in range(3):
+    print(i*2)</code>
+                <div class="output">
+                    Вывод:<br>0<br>2<br>4
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Оператор break</h2>
+            <p>Немедленный выход из цикла:</p>
+            
+            <div class="example">
+                <code>for num in range(10):
+    if num == 5:
+        break
+    print(num)</code>
+                <div class="output">
+                    Вывод:<br>0<br>1<br>2<br>3<br>4
+                </div>
+            </div>
+            
+            <div class="warning">
+                <h3>Важно!</h3>
+                <p>В while без break убедитесь, что условие станет False, иначе цикл будет бесконечным.</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 Основы Python | Циклы</p>
+        </footer>
+    </div>
+</body>
+</html>
